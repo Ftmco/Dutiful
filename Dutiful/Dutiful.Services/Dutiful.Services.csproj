@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Dutiful.DataBase\Dutiful.DataBase.csproj" />
+    <ProjectReference Include="..\Dutiful.Entity\Dutiful.Entity.csproj" />
+  </ItemGroup>
+
 </Project>

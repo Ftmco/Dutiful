@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Forum\" />
+    <Folder Include="Chat Room\" />
+  </ItemGroup>
+
 </Project>
