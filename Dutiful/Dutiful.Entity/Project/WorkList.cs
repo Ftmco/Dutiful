@@ -10,11 +10,9 @@ public record WorkList
 
     [Required]
     public DateTime CreateDate { get; set; }
-
-    [Required]
-    public short Type { get; set; }
-
-    [Required]
-    public Guid WorkListId { get; set; }
-
+         
+    //Navigation Property
+    //Relationships
+        
+    public virtual ICollection<Card> Card { get; set; }
 }

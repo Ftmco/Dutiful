@@ -9,5 +9,11 @@ public record Team
     [Required]
     public string Name { get; set; }
 
+    public string? Image { get; set; }
+        
+    //Navigation Property
+    //Relationships
+
+    public virtual ICollection<Project.Project> Project { get; set; }
 
 }

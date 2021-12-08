@@ -1,6 +1,7 @@
 ﻿namespace Dutiful.Entity.Project;
 
 
+
 public record Card
 {
 
@@ -13,4 +14,17 @@ public record Card
 
     [Required]
     public DateTime CreateDate { get; set; }
+
+    [Required]
+    public short Type { get; set; }
+
+    [Required]
+    public Guid WorkListId { get; set; }
+
+    //Navigation Property
+    //Relationships
+
+    public virtual WorkList WorkList { get; set; }
+
+    public virtual ICollection<WorkTask> WorkTask { get; set; }
 }

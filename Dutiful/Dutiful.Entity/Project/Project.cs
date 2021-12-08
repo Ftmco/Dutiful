@@ -10,5 +10,15 @@ public record Project
 
     [Required]
     public DateTime CreateDate { get; set; }
+
+    [Required]
+    public Guid TeamId { get; set; }
+
+    //Navigation Property
+    //Relationships
+
+    public virtual Team.Team Team { get; set; }
+
+    public virtual ICollection<WorkList> WorkList { get; set; }
 }
 
