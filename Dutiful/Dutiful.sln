@@ -13,15 +13,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{F4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{CC454985-05BA-4255-9B2C-8BCDD8B3796D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dutiful.Web.Api", "Dutiful.Web.Api\Dutiful.Web.Api.csproj", "{40697ED7-4A5F-4403-9E2E-48B2BB5A070A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dutiful.Web.Api", "Dutiful.Web.Api\Dutiful.Web.Api.csproj", "{40697ED7-4A5F-4403-9E2E-48B2BB5A070A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dutiful.Entity", "Dutiful.Entity\Dutiful.Entity.csproj", "{5309E96B-11F3-4452-96A0-5FCE4AA91408}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dutiful.Entity", "Dutiful.Entity\Dutiful.Entity.csproj", "{5309E96B-11F3-4452-96A0-5FCE4AA91408}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dutiful.DataBase", "Dutiful.DataBase\Dutiful.DataBase.csproj", "{6D4B3E58-7FA1-4D14-8515-A137DF9763A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dutiful.DataBase", "Dutiful.DataBase\Dutiful.DataBase.csproj", "{6D4B3E58-7FA1-4D14-8515-A137DF9763A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dutiful.Services", "Dutiful.Services\Dutiful.Services.csproj", "{E0FF7340-F690-4431-AB23-E8B5D8F7A045}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dutiful.Services", "Dutiful.Services\Dutiful.Services.csproj", "{E0FF7340-F690-4431-AB23-E8B5D8F7A045}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dutiful.Tools", "Dutiful.Tools\Dutiful.Tools.csproj", "{E5E6FC47-51EC-4FB2-A6F8-9ED1CF192D8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dutiful.Tools", "Dutiful.Tools\Dutiful.Tools.csproj", "{E5E6FC47-51EC-4FB2-A6F8-9ED1CF192D8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dutiful.ViewModels", "Dutiful.ViewModels\Dutiful.ViewModels.csproj", "{589E3637-D01E-4713-B753-16DEA3331E00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,10 @@ Global
 		{E5E6FC47-51EC-4FB2-A6F8-9ED1CF192D8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5E6FC47-51EC-4FB2-A6F8-9ED1CF192D8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5E6FC47-51EC-4FB2-A6F8-9ED1CF192D8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{589E3637-D01E-4713-B753-16DEA3331E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{589E3637-D01E-4713-B753-16DEA3331E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{589E3637-D01E-4713-B753-16DEA3331E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{589E3637-D01E-4713-B753-16DEA3331E00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +69,7 @@ Global
 		{6D4B3E58-7FA1-4D14-8515-A137DF9763A7} = {87A7E2BB-4F19-4E5A-BE4C-BF30B0A25450}
 		{E0FF7340-F690-4431-AB23-E8B5D8F7A045} = {F4D0378D-C573-48C1-90CC-5584A8AA620F}
 		{E5E6FC47-51EC-4FB2-A6F8-9ED1CF192D8C} = {F4D0378D-C573-48C1-90CC-5584A8AA620F}
+		{589E3637-D01E-4713-B753-16DEA3331E00} = {87A7E2BB-4F19-4E5A-BE4C-BF30B0A25450}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {22A26C7F-122B-4C98-9CC0-87E8CC9512DC}

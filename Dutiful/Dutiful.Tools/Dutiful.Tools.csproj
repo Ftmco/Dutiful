@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Dutiful.ViewModels\Dutiful.ViewModels.csproj" />
+  </ItemGroup>
+
 </Project>
