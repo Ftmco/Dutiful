@@ -1,32 +1,22 @@
-var Main = () =>
-{
-    WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
-    // Add services to the container.
+// Add services to the container.
 
-    builder.Services.AddControllers();
-    // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-    builder.Services.AddEndpointsApiExplorer();
-    builder.Services.AddSwaggerGen();
-    builder.Services.AddDbContext<DutifulContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DutifulConnection")));
+builder.Services.AddControllers();
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<DutifulContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DutifulConnection")));
 
-    var app = builder.Build();
+WebApplication app = builder.Build();
 
-    // Configure the HTTP request pipeline.
-    if (app.Environment.IsDevelopment())
-    {
-        app.UseSwagger();
-        app.UseSwaggerUI();
-    }
+app.UseSwagger();
+app.UseSwaggerUI();
 
-    app.UseHttpsRedirection();
+app.UseHttpsRedirection();
 
-    app.UseAuthorization();
+app.UseAuthorization();
 
-    app.MapControllers();
+app.MapControllers();
 
-    app.Run();
-
-};
-
-Main();
+await app.RunAsync();
