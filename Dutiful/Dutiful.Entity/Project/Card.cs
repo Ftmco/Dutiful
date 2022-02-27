@@ -6,19 +6,20 @@ using System.Threading.Tasks;
 
 namespace Dutiful.Entity.Project;
 
-public record Project
+public    record Card
 {
     [Key]
     public Guid Id { get; set; }
 
     [Required]
-    public string Name { get; set; }
-
-    public string Description { get; set; }
-
-    [Required]
-    public Guid TeamId { get; set; }
+    public string Title { get; set; }
 
     [Required]
     public DateTime CreateDate { get; set; }
+
+    [Required]
+    public Guid ListId { get; set; }
+
+    [Required]
+    public Guid OwnerId { get; set; }
 }

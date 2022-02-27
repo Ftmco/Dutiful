@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dutiful.Entity.Project;
 
-public record Project
+public record WorkList
 {
     [Key]
     public Guid Id { get; set; }
@@ -14,10 +14,7 @@ public record Project
     [Required]
     public string Name { get; set; }
 
-    public string Description { get; set; }
-
-    [Required]
-    public Guid TeamId { get; set; }
+    public string Color { get; set; }
 
     [Required]
     public DateTime CreateDate { get; set; }
