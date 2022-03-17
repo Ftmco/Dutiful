@@ -2,7 +2,7 @@
 
 namespace Dutiful.Services.Base;
 
-internal interface IBaseRules<Tentity> where Tentity : class
+public interface IBaseRules<Tentity> : IAsyncDisposable where Tentity : class
 {
     Task<IEnumerable<Tentity>> GetAsync();
 
