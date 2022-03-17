@@ -25,4 +25,6 @@ public class DutifulContext : DbContext
 
     public virtual DbSet<Team> Team { get; set; }
 
+    public virtual DbSet<TeamUsers> TeamUsers { get; set; }
+
 }
