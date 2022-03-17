@@ -6,19 +6,14 @@ using System.Threading.Tasks;
 
 namespace Dutiful.Entity.Team;
 
-public record Team
+public record TeamUsers
 {
     [Key]
     public Guid Id { get; set; }
 
     [Required]
-    public string Name { get; set; }
+    public Guid TeamId { get; set; }
 
     [Required]
-    public string Token { get; set; }
-
-    [Required]
-    public Guid OwnerId { get; set; }
-
-    public string Bio { get; set; }
+    public Guid UserId { get; set; }
 }
