@@ -15,11 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Dutiful.DataBase\Dutiful.DataBase.csproj" />
+    <ProjectReference Include="..\Dutiful.Services\Dutiful.Services.csproj" />
+    <ProjectReference Include="..\Dutiful.ViewModels\Dutiful.ViewModels.csproj" />
   </ItemGroup>
 
 </Project>
