@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+
+option csharp_namespace = "IdentityProto";
+
+package greet;
+
+service Identity = {
+	rpc GetUser(GetUserModel) returns (UserModel);
+}
+
+message GetUserModel {
+	string token;
+}
+
+message UserModel{
+	string Id;
+	string UserName;
+	string FullName;
+	string Email;
+	string MobileNo;
+}
