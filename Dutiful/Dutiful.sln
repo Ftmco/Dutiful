@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dutiful.Services", "Dutiful
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dutiful.Tools", "Dutiful.Tools\Dutiful.Tools.csproj", "{E5E6FC47-51EC-4FB2-A6F8-9ED1CF192D8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dutiful.ViewModels", "Dutiful.ViewModels\Dutiful.ViewModels.csproj", "{589E3637-D01E-4713-B753-16DEA3331E00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dutiful.ViewModels", "Dutiful.ViewModels\Dutiful.ViewModels.csproj", "{589E3637-D01E-4713-B753-16DEA3331E00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
