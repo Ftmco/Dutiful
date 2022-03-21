@@ -14,11 +14,13 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Dutiful.DataBase\Dutiful.DataBase.csproj" />
     <ProjectReference Include="..\Dutiful.Entity\Dutiful.Entity.csproj" />
+    <ProjectReference Include="..\Dutiful.Tools\Dutiful.Tools.csproj" />
     <ProjectReference Include="..\Dutiful.ViewModels\Dutiful.ViewModels.csproj" />
   </ItemGroup>
 
