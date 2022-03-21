@@ -66,6 +66,9 @@ public class BaseServices<TEntity> : IBaseRules<TEntity> where TEntity : class
         await _context.DisposeAsync();
     }
 
+    public async Task<TEntity> FirstOrDefualtAsync(Expression<Func<TEntity, bool>> where)
+        => await _dbSet.FirstOrDefaultAsync(where);
+
     public async Task<IEnumerable<TEntity>> GetAsync()
     => await Task.FromResult(await _dbSet.ToListAsync());
 
